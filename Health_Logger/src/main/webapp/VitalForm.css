@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to bottom, #3498db, #2c3e50);
+	color: white;
+}
+
+#container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+label {
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+input, select {
+	align-items: left;
+	padding: 8px;
+	width: 100%;
+	margin: 10px 0px;
+	box-sizing: border-box;
+	transition: background-color 0.3s;
+}
+
+input:hover, input:focus, select:hover, select:focus {
+	background: linear-gradient(to bottom, #3498db, #2c3e50);
+	color: white;
+}
+
+#button, #button-reset {
+	padding: 5px 10px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-top: 10px;
+	letter-spacing: 5px;
+	/* Add margin to separate buttons from the form fields */
+}
+
+#button:hover {
+	background-color: green;
+}
+
+#button-reset {
+	background-color: #c0392b;
+	color: white;
+	margin-left: 10px;
+	letter-spacing: 10px;
+}
+
+#button-reset:hover {
+	background-color: red;
+}

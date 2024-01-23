@@ -1,0 +1,65 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to bottom, #3498db, #2c3e50);
+	color: white;
+}
+
+#container {
+	text-align: center;
+}
+
+#logo {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h1 {
+	margin: 10px;
+}
+
+#button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: block; /* Make the button a block-level element */
+	margin: 0 auto; /* Center the button horizontally */
+	margin-bottom: 10px; /* Add margin to create space between buttons */
+}
+
+#button:hover {
+	background-color: #45a049;
+}
+
+#managePatientButton, #manageVitalsButton {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: block; /* Make the button a block-level element */
+	margin: 0 auto; /* Center the button horizontally */
+	margin-bottom: 10px;
+}
+
+#managePatientButton:hover, #manageVitalsButton:hover {
+	background-color: green;
+	color: white;
+	letter-spacing: 5px;
+	border-radius: 20px;
+}

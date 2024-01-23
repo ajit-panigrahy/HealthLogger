@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+	padding: 10px;
+}
+
+canvas {
+	max-width: 800px;
+	margin: 20px auto;
+	display: block;
+	background-color: white;
+}
+
+body {
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to bottom, #3498db, #2c3e50);
+	color: white;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 20px;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.action-column {
+	text-align: center;
+}
+
+.action-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.action-button {
+	padding: 5px 10px;
+	margin: 0 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.manage-button {
+	background-color: #45a049;
+	color: white;
+}
+
+.update-button {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.delete-button {
+	background-color: #f44336;
+	color: white;
+}
+
+#logout-btn {
+	padding: 10px;
+	background-color: #f44336;
+	cursor: pointer;
+	font-weight: bolder;
+	color: white;
+}
+
+#search-btn, #add-patient-btn, #manage-vitals-btn {
+	background-color: #45a049;
+	cursor: pointer;
+	font-weight: bolder;
+	color: white;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection properties -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">Aa@@11@@</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/HealthLogger</property>
+		<property name="hibernate.connection.username">root</property>
+
+		<!-- Specify dialect for MySQL -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!-- Automatically create/update database tables based on entity mappings -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Show SQL statements in the console -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- Format SQL statements for better readability -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- Specify package(s) where annotated entity classes are located -->
+		<mapping class="healthlogger.entity.Patients" />
+		<mapping class="healthlogger.entity.Vitals" />
+
+		<!-- You can add more mappings for other entities here -->
+
+	</session-factory>
+</hibernate-configuration>
